@@ -1,0 +1,252 @@
+body{
+    background-color: #838383;
+    font-family: system-ui;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header{
+    background-color: #c2c2c2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    position: top;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    margin-top: -10px;
+}
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+.navBar ul{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+}
+.navBar div{
+    position: relative;
+}
+.navBar p{
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: white;
+    
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    font-family: Arial;
+    line-height: 18px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 1rem;
+}
+.logo{
+    width: 100px;
+    height: 84px;
+    cursor: pointer;
+}
+.carrito{
+    width: 50px;
+    height: 50px;
+}
+.productos-carrito{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 0 18px;
+    display: none;
+    min-width: 290px;
+    z-index: 9999;
+}
+.productos-carrito a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: greenyellow;
+    padding: 7px 18px;
+    color: white;
+    font-size: 172x;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor:pointer;
+}
+.carrito:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+.productos ul{
+    padding-top: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+.cards {
+    width: 200px; /* Ajusta según el tamaño deseado */
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: block;
+}
+.cards img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;}
+.cards p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+    color: #000000;
+}
+.cards div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 235, 129);
+    color: white;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.cards div{
+    position: relative;
+    background-color: white;
+}
+.cards button{
+    font-family: system-ui;
+    text-decoration: none;
+    background: red;
+    padding: 9px 23px;
+    color:white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cards a:hover{
+    background: #4704ff00;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+.productos-carrito .item img{
+    width: 80px;
+    height: auto; 
+}
+.productos-carrito ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 2px red;
+    gap: 10px; 
+    list-style: none;
+    padding: 0;
+}
+.productos-carrito .item{
+    margin: 0 19px;
+    width: 201px;
+}
+.productos-carrito .item h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.productos-carrito .item h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.productos-carrito .item span{
+    background-color: red;
+    padding: 0px 6px;
+    border-radius: 100%;
+    color: white;
+    font-family: system-ui;
+    cursor: pointer;
+    gap: 5px;
+}
+.productos-carrito h3{
+    margin-bottom: 0;
+}
+.productos-carrito .item h5 .cart-price{
+    font-weight: 700;
+}
+.Buscador {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-content: center;
+  }
+  
+  input {
+    font-size: 20px;
+  }
+  .hide {
+    display: none;
+  }
+#Button-Search{
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: black;
+    height: 29px;
+  }
+.Buscado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+#sortButton{
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    right: 95px;
+}
+
+.redes{
+    text-align: center;
+    position: relative;
+    left: 20px;
+}
+
+.ulRedes{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    gap: 10px;
+}
